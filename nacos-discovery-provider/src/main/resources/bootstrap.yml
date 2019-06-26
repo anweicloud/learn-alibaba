@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.1.11:8848
+        # 配置文件的名称
+        name: nacos-config
+        file-extension: properties
