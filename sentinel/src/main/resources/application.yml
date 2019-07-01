@@ -1,8 +1,13 @@
 server:
-  port: 9092
+  port: 8096
 spring:
   cloud:
     sentinel:
       transport:
         port: 8719
-        dashboard: 8083
+        dashboard: 8197
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  application:
+    name: sentinel-app-01
