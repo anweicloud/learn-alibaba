@@ -7,3 +7,6 @@ spring:
         name: nacos-provider-config
         file-extension: yaml
         group: PROVIDER_GROUP
+  profiles:
+  # 同时存在bootstrap.yml和bootstrap-dev.yml在runconfiguration中指定active
+  active: dev

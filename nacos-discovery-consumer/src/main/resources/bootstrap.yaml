@@ -4,6 +4,5 @@ spring:
       config:
         server-addr: 127.0.0.1:8848
         # 配置文件的名称
-        name: nacos-provider-config
+        name: nacos-consumer-config
         file-extension: yaml
-        group: PROVIDER_GROUP
