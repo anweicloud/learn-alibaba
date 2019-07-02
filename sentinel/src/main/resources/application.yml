@@ -10,9 +10,9 @@ spring:
       discovery:
         server-addr: 127.0.0.1:8848
   application:
-    name: sentinel-app-01
+    name: feign-sentinel-01
 
-
+# fallback
 feign:
   sentinel:
     enabled: true

@@ -13,6 +13,7 @@
         <module>nacos-discovery-provider</module>
         <module>nacos-discovery-consumer</module>
         <module>sentinel</module>
+        <module>gateway</module>
     </modules>
 
 </project>

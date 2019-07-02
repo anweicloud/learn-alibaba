@@ -1,5 +1,6 @@
 package com.anwei.alibaba.nacos.discovery.provider;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -27,12 +28,15 @@ public class NacosDiscoveryProviderApplication {
 
 //        SpringApplication.run(NacosDiscoveryProviderApplication.class, args);
     }
+    @Value("${server.port}")
+    private String port;
 
     @RestController
     public class EchoController {
         @GetMapping(value = "/echo/{string}")
         public String echo(@PathVariable String string) {
-            return "Hello Nacos Discovery " + string;
+//            Integer.parseInt("2A");
+            return "Hello Nacos Discovery " + string+" my port:"+port;
         }
     }
 }
