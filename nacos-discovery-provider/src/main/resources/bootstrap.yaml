@@ -1,0 +1,8 @@
+#spring:
+#  cloud:
+#    nacos:
+#      config:
+#        server-addr: 182.61.11.6:8848
+#        # 配置文件的名称
+#        name: nacos-provider-config
+#        file-extension: yaml

@@ -1,0 +1,15 @@
+
+
+#  profiles:
+  # 同时存在bootstrap.yml和bootstrap-dev.yml在runconfiguration中指定active
+
+server:
+  port: 9090
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 182.61.11.6:8848
+  application:
+    name: nacos-discovery-provider
+#  active: dev
