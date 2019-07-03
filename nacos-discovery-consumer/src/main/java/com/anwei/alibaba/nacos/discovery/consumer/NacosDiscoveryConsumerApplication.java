@@ -24,12 +24,12 @@ public class NacosDiscoveryConsumerApplication {
     }
 
     @Bean
-    public RestTemplate restTemplate(){
+    public RestTemplate restTemplate() {
         return new RestTemplate();
     }
 
     @RestController
-    public class NacosController{
+    public class NacosController {
         @Autowired
         private LoadBalancerClient loadBalancerClient;
         @Autowired
@@ -39,14 +39,14 @@ public class NacosDiscoveryConsumerApplication {
 //        private String appName;
 
         @GetMapping("/echo/app-name")
-        public String echoAppName(){
+        public String echoAppName() {
             String appName = cfgAppctx.getEnvironment().getProperty("spring.application.name");
             String provider = cfgAppctx.getEnvironment().getProperty("provider.name");
             //使用 LoadBalanceClient 和 RestTemolate 结合的方式来访问
             ServiceInstance serviceInstance = loadBalancerClient.choose(provider);
-            String url = String.format("http://%s:%s/echo/%s",serviceInstance.getHost(),serviceInstance.getPort(),appName+serviceInstance.getPort());
-            System.out.println("request url:"+url);
-            return restTemplate.getForObject(url,String.class);
+            String url = String.format("http://%s:%s/echo/%s", serviceInstance.getHost(), serviceInstance.getPort(), appName + serviceInstance.getPort());
+            System.out.println("request url:" + url);
+            return restTemplate.getForObject(url, String.class);
         }
 
     }

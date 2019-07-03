@@ -80,7 +80,7 @@ gateway_GROUP
                 - Method=GET,POST
 
     logging:
-      level:
+      level:¡
         org.springframework.cloud.gateway: debug
 
 

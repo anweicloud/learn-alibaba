@@ -3,7 +3,7 @@ package com.anwei.alibaba.sentinel.feign;
 import org.springframework.stereotype.Component;
 
 @Component
-public class EchoServiceFallBack implements EchoService {
+public class EchoServiceImpl implements EchoService {
 
     @Override
     public String echo(String str) {
