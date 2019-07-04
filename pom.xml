@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>nacos-config</module>
         <module>nacos-discovery-provider</module>
         <module>nacos-discovery-consumer</module>
         <module>sentinel</module>

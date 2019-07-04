@@ -1,0 +1,17 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: nacos-sentinel-feign
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 182.61.11.6:8848
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8197
+        port: 8197
+
+feign:
+  sentinel:
+    enabled: true

@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: 182.61.11.6:8848
+        name: nacos-config
+        file-extension: yaml
+
+      discovery:
+        # \u4E0D\u914D\u7F6Ediscovery\u5730\u5740 \u5C31\u8981\u8BBE\u7F6Eenabled\u4E3Afalse\uFF0C\u5426\u5219\u62A5\u9519no service avalible
+        enabled: false

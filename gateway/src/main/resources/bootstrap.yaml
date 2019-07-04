@@ -3,5 +3,5 @@ spring:
     nacos:
       config:
         server-addr: 182.61.11.6:8848
-        name: nacos-config-gateway
+        name: spring-cloud-gateway-config
         file-extension: yaml

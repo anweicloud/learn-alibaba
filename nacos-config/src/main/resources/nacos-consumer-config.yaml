@@ -1,0 +1,12 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: nacos-discovery-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 182.61.11.6:8848
+provider:
+  name: nacos-discovery-provider

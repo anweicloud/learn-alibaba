@@ -1,0 +1,14 @@
+server:
+  port: 9021
+
+spring:
+  application:
+    name: nacos-discovery-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 182.61.11.6:8848
+
+user:
+  name: Anweicloud
+  age: 27
